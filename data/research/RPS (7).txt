@@ -1,0 +1,11 @@
+7. Research Ethics
+•	Psychosocial risk mitigation: Examining stress, discrimination, heightened precariousness, and work intensification to mitigate psychosocial risks.
+•	Plagiarism and assistance misuse detection: Monitoring, identifying, and addressing plagiarism and misuse of artificial intelligence assistance.
+•	Authenticity and fraud evaluation: Utilizing AI content Detectors or AI Detection Systems to verify the authenticity of term papers and prevent violations of the educational pact.
+•	Protecting against false accusations: Guaranteeing detection tool reliability to prevent a serious unfounded accusation of fraud.
+•	Data privacy and algorithmic bias: Addressing data privacy concerns, algorithmic biases, and implementing robust data security measures.
+•	Perceived fairness and dispute reduction: Exploring the moderating effect of engineering ethics on the relationship between perceived fairness (decision, procedural, quality of treatment) and dispute potential.
+•	De-colonizing academic research: Disrupting patterns of symbolic violence and eliminating institutional racism within academic journals and funding bodies.
+•	Ensuring culturally secure environments: Ensuring ethical research with Indigenous communities by establishing culturally secure research environments.
+•	Indigenous core values: Prioritizing ethical values of respect, relationships, advocacy, reciprocity, time, and gratitude.
+•	Relational trust building: Underpinning research partnerships with relational values of trust, respect, and reciprocity.

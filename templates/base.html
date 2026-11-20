@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Stage alignment{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="{{ url_for('overview', **kp) }}">Research and project management stages</a>
+    <nav aria-label="Main">
+      <a href="{{ url_for('overview', **kp) }}" {% if request.endpoint in ('overview', 'pair') %}aria-current="page"{% endif %}>Overview</a>
+      <a href="{{ url_for('items', **kp) }}" {% if request.endpoint in ('items', 'item') %}aria-current="page"{% endif %}>Items</a>
+      <a href="{{ url_for('judgments', **kp) }}" {% if request.endpoint == 'judgments' %}aria-current="page"{% endif %}>Language-model check</a>
+      <a href="{{ url_for('method', **kp) }}" {% if request.endpoint == 'method' %}aria-current="page"{% endif %}>How it works</a>
+    </nav>
+  </header>
+  <main>
+    {% if standin %}
+    <aside class="caution wide">
+      <strong>Stand-in method.</strong> These figures were computed with <em>{{ info.method }}</em> ({{ info.model }}), not the sentence-embedding model. Use them for the pattern, not the exact percentages. For the final figures run <code>python align_stages.py</code> and reload.
+    </aside>
+    {% endif %}
+    {% if judge_mock %}
+    <aside class="caution wide">
+      <strong>Placeholder verdicts.</strong> The judged pairs include verdicts from the <em>mock</em> backend, which come from the similarity score, not from a language model. Run <code>python judge_pairs.py</code> with a real model before using them.
+    </aside>
+    {% endif %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

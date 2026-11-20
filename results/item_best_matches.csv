@@ -1,0 +1,213 @@
+item_id,side,stage_no,stage,skill_label,identical_other_side,best_id,best_label,best_stage_no,best_stage,best_sim,aligned
+R01.01,research,1,Identifying a Research Problem,Systematic search and selection,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.5237,True
+R01.02,research,1,Identifying a Research Problem,Gap and scarcity analysis,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.4865,False
+R01.03,research,1,Identifying a Research Problem,Identifying future research areas,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.6226,True
+R01.04,research,1,Identifying a Research Problem,Addressing underexplored sectors,False,P03.02,Stakeholder engagement workflows,3,Stakeholder Analysis and Requirements Gathering,0.4179,False
+R01.05,research,1,Identifying a Research Problem,DSR problem identification,False,P12.03,DSR communication phase,12,Dissemination of Research Findings,0.7597,True
+R01.06,research,1,Identifying a Research Problem,Conceptualizing problem classes,False,P01.05,Problem class definition,1,Project Conception and Feasibility Analysis,0.7914,True
+R01.07,research,1,Identifying a Research Problem,Defining organizational needs,False,P06.05,Managing resource constraints,6,Resource Allocation and Budgeting,0.5616,True
+R01.08,research,1,Identifying a Research Problem,Determining state-of-the-art and gaps,False,P01.02,Initiation planning,1,Project Conception and Feasibility Analysis,0.3633,False
+R01.09,research,1,Identifying a Research Problem,Identifying blind spots,False,P04.02,Standard process mapping,4,Scope Baseline and WBS Design,0.5031,True
+R01.10,research,1,Identifying a Research Problem,Structuring research agendas,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.4897,False
+R01.11,research,1,Identifying a Research Problem,Critical research gap assessment,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.398,False
+R01.12,research,1,Identifying a Research Problem,Supply chain thematic mapping,False,P03.02,Stakeholder engagement workflows,3,Stakeholder Analysis and Requirements Gathering,0.4629,False
+R02.01,research,2,Refining a Research Topic,Eligibility screening,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.353,False
+R02.02,research,2,Refining a Research Topic,Scoping and boundary definition,False,P02.01,Project boundary formulation,2,Project Chartering and Business Case Development,0.7163,True
+R02.03,research,2,Refining a Research Topic,Maintaining research boundaries,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.4643,False
+R02.04,research,2,Refining a Research Topic,Defining domains of interest,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.4259,False
+R03.01,research,3,Conducting a Literature Review,Quantitative and systematic literature reviews,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.4796,False
+R03.02,research,3,Conducting a Literature Review,Rigorous source pruning,False,P12.06,Conference dissemination,12,Dissemination of Research Findings,0.3062,False
+R03.03,research,3,Conducting a Literature Review,Bibliometric and layout mapping,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.377,False
+R03.04,research,3,Conducting a Literature Review,Quality assessment reporting,False,P01.06,Exploratory success/failure diagnosis,1,Project Conception and Feasibility Analysis,0.4688,False
+R03.05,research,3,Conducting a Literature Review,Methodological quality assessment,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.4867,False
+R03.06,research,3,Conducting a Literature Review,Theoretical fundamental exploration,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.4294,False
+R03.07,research,3,Conducting a Literature Review,Theoretical synthesization,False,P02.03,Formulating hybrid initiation rules,2,Project Chartering and Business Case Development,0.47,False
+R03.08,research,3,Conducting a Literature Review,Concept examination,False,P04.02,Standard process mapping,4,Scope Baseline and WBS Design,0.5434,True
+R03.09,research,3,Conducting a Literature Review,Surveying digital assets,False,P06.04,Digital asset provisioning,6,Resource Allocation and Budgeting,0.5893,True
+R03.10,research,3,Conducting a Literature Review,Process relevance tailoring,False,P04.02,Standard process mapping,4,Scope Baseline and WBS Design,0.4803,False
+R03.11,research,3,Conducting a Literature Review,Scientometric analysis,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.4506,False
+R03.12,research,3,Conducting a Literature Review,Multivocal literature reviews,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.4426,False
+R03.13,research,3,Conducting a Literature Review,Journal database bibliometrics,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.4906,False
+R03.14,research,3,Conducting a Literature Review,Systematic reviews of human capital,False,P02.05,Linking culture and asset values,2,Project Chartering and Business Case Development,0.2642,False
+R03.15,research,3,Conducting a Literature Review,Thematic literature analysis,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.4245,False
+R03.16,research,3,Conducting a Literature Review,TCCM framework synthesis,False,P07.03,Contract management,7,Risk Management and Procurement Strategy,0.4399,False
+R03.17,research,3,Conducting a Literature Review,Scoping review protocol,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.6294,True
+R03.18,research,3,Conducting a Literature Review,JBI scoping review methodology,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.5552,True
+R03.19,research,3,Conducting a Literature Review,Independent dual-author screening,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.4031,False
+R03.20,research,3,Conducting a Literature Review,Standardized data extraction,False,P11.02,Strategic adjustment management,11,Change Control and Variance Mitigation,0.2431,False
+R03.21,research,3,Conducting a Literature Review,PAGER framework synthesis,False,P12.03,DSR communication phase,12,Dissemination of Research Findings,0.3579,False
+R03.22,research,3,Conducting a Literature Review,Thematic post-adoption review,False,P12.04,Layperson dissemination,12,Dissemination of Research Findings,0.3495,False
+R04.01,research,4,Developing Research Questions and Objectives,Aim setting for target skills,False,P02.04,Competency baseline setting,2,Project Chartering and Business Case Development,0.499,False
+R04.02,research,4,Developing Research Questions and Objectives,Formulating questions and assumptions,False,P12.04,Layperson dissemination,12,Dissemination of Research Findings,0.3595,False
+R04.03,research,4,Developing Research Questions and Objectives,DSR objectives definition,False,P12.03,DSR communication phase,12,Dissemination of Research Findings,0.7583,True
+R04.04,research,4,Developing Research Questions and Objectives,Construct evaluation planning,False,P01.02,Initiation planning,1,Project Conception and Feasibility Analysis,0.4273,False
+R04.05,research,4,Developing Research Questions and Objectives,Multi-phase objective formulation,False,P04.01,Scope management,4,Scope Baseline and WBS Design,0.474,False
+R05.01,research,5,Selecting a Research Design and Methods,Quasi-experimental study design,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.3509,False
+R05.02,research,5,Selecting a Research Design and Methods,Longitudinal studies,False,P05.02,Joint timetable design,5,Schedule Estimation and Milestone Planning,0.402,False
+R05.03,research,5,Selecting a Research Design and Methods,Quantitative scale adaptation,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.3188,False
+R05.04,research,5,Selecting a Research Design and Methods,Controlled experimental design,False,P04.03,Task boundary modeling,4,Scope Baseline and WBS Design,0.3672,False
+R05.05,research,5,Selecting a Research Design and Methods,Qualitative interviews,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.3862,False
+R05.06,research,5,Selecting a Research Design and Methods,Exploratory comparative design,False,P01.06,Exploratory success/failure diagnosis,1,Project Conception and Feasibility Analysis,0.5539,True
+R05.07,research,5,Selecting a Research Design and Methods,Structural equation modeling (SEM),False,P01.03,Strategic alignment evaluation,1,Project Conception and Feasibility Analysis,0.5114,True
+R05.08,research,5,Selecting a Research Design and Methods,World Café workshop methodology,False,P03.02,Stakeholder engagement workflows,3,Stakeholder Analysis and Requirements Gathering,0.453,False
+R05.09,research,5,Selecting a Research Design and Methods,Deductive and structured interviews,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.4219,False
+R05.10,research,5,Selecting a Research Design and Methods,Social network and topic modeling,False,P11.02,Strategic adjustment management,11,Change Control and Variance Mitigation,0.3153,False
+R05.11,research,5,Selecting a Research Design and Methods,Field-based structural modeling,False,P04.03,Task boundary modeling,4,Scope Baseline and WBS Design,0.4178,False
+R05.12,research,5,Selecting a Research Design and Methods,Scrum-facilitated action research,False,P09.02,Agile sprints and Scrum,9,Project Execution and Iterative Implementation,0.5548,True
+R05.13,research,5,Selecting a Research Design and Methods,Empirical software engineering surveys,False,P06.05,Managing resource constraints,6,Resource Allocation and Budgeting,0.4071,False
+R05.14,research,5,Selecting a Research Design and Methods,Researcher-administered surveys,False,P12.04,Layperson dissemination,12,Dissemination of Research Findings,0.3909,False
+R05.15,research,5,Selecting a Research Design and Methods,Design Science Research (DSR) cycles,False,P09.05,Incremental development,9,Project Execution and Iterative Implementation,0.84,True
+R05.16,research,5,Selecting a Research Design and Methods,Assistive research framework methodology,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.3935,False
+R05.17,research,5,Selecting a Research Design and Methods,TACT qualitative framework,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.769,True
+R05.18,research,5,Selecting a Research Design and Methods,Activist and YPAR methodologies,False,P12.04,Layperson dissemination,12,Dissemination of Research Findings,0.2913,False
+R05.19,research,5,Selecting a Research Design and Methods,Yarning and Relational Yarning,False,P07.06,Supply chain risk mitigation,7,Risk Management and Procurement Strategy,0.3263,False
+R05.20,research,5,Selecting a Research Design and Methods,Scoping review methodology,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.6029,True
+R05.21,research,5,Selecting a Research Design and Methods,Indigenous practice frameworks,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.3299,False
+R05.22,research,5,Selecting a Research Design and Methods,Patient-centered outcomes research,False,P07.05,Claim administration,7,Risk Management and Procurement Strategy,0.3559,False
+R05.23,research,5,Selecting a Research Design and Methods,Pragmatic trial design,False,P09.05,Incremental development,9,Project Execution and Iterative Implementation,0.3051,False
+R06.01,research,6,Scientific Review,Reporting quality appraisal,False,P01.06,Exploratory success/failure diagnosis,1,Project Conception and Feasibility Analysis,0.4142,False
+R06.02,research,6,Scientific Review,Methodological quality appraisal,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.4664,False
+R06.03,research,6,Scientific Review,Dataset clean-up,False,P12.06,Conference dissemination,12,Dissemination of Research Findings,0.3778,False
+R06.04,research,6,Scientific Review,Iterative framework validation,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.7072,True
+R06.05,research,6,Scientific Review,Assessing qualitative rigour,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.8762,True
+R06.06,research,6,Scientific Review,Instrument reliability testing,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.4737,False
+R06.07,research,6,Scientific Review,Dependability and reflexivity assessment,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.4741,False
+R06.08,research,6,Scientific Review,Methodological peer-review,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.5431,True
+R07.01,research,7,Research Ethics,Psychosocial risk mitigation,False,P11.05,Mitigating work-intensification risks,11,Change Control and Variance Mitigation,0.642,True
+R07.02,research,7,Research Ethics,Plagiarism and assistance misuse detection,False,P10.06,Safety quality supervision,10,"Monitoring, Controlling, and Quality Assurance",0.2793,False
+R07.03,research,7,Research Ethics,Authenticity and fraud evaluation,False,P10.06,Safety quality supervision,10,"Monitoring, Controlling, and Quality Assurance",0.3164,False
+R07.04,research,7,Research Ethics,Protecting against false accusations,False,P10.04,Quality testing and QA,10,"Monitoring, Controlling, and Quality Assurance",0.4669,False
+R07.05,research,7,Research Ethics,Data privacy and algorithmic bias,False,P11.05,Mitigating work-intensification risks,11,Change Control and Variance Mitigation,0.2974,False
+R07.06,research,7,Research Ethics,Perceived fairness and dispute reduction,False,P07.05,Claim administration,7,Risk Management and Procurement Strategy,0.6774,True
+R07.07,research,7,Research Ethics,De-colonizing academic research,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.3918,False
+R07.08,research,7,Research Ethics,Ensuring culturally secure environments,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.3462,False
+R07.09,research,7,Research Ethics,Indigenous core values,False,P02.05,Linking culture and asset values,2,Project Chartering and Business Case Development,0.3584,False
+R07.10,research,7,Research Ethics,Relational trust building,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.4362,False
+R08.01,research,8,Data Collection,Database search extraction,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.4384,False
+R08.02,research,8,Data Collection,ESL assessment instruments,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.4441,False
+R08.03,research,8,Data Collection,Triangulated data collection,False,P12.06,Conference dissemination,12,Dissemination of Research Findings,0.3264,False
+R08.04,research,8,Data Collection,Online and classroom surveying,False,P12.04,Layperson dissemination,12,Dissemination of Research Findings,0.362,False
+R08.05,research,8,Data Collection,Qualitative interviews and transcription,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.3249,False
+R08.06,research,8,Data Collection,Survey-based investigation,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.3758,False
+R08.07,research,8,Data Collection,Questionnaire distribution,False,P12.04,Layperson dissemination,12,Dissemination of Research Findings,0.3769,False
+R08.08,research,8,Data Collection,World Café item documentation,False,P03.06,Collaborative brainstorming,3,Stakeholder Analysis and Requirements Gathering,0.4294,False
+R08.09,research,8,Data Collection,Structured interviews,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.4907,False
+R08.10,research,8,Data Collection,Behavioral digital asset collection,False,P06.04,Digital asset provisioning,6,Resource Allocation and Budgeting,0.6245,True
+R08.11,research,8,Data Collection,Structural modeling survey collection,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.401,False
+R08.12,research,8,Data Collection,Student self-regulation surveys,False,P10.03,Performance tracking and KPIs,10,"Monitoring, Controlling, and Quality Assurance",0.2702,False
+R08.13,research,8,Data Collection,Multivocal survey administration,False,P12.06,Conference dissemination,12,Dissemination of Research Findings,0.3393,False
+R08.14,research,8,Data Collection,Researcher-administered surveys,False,P02.05,Linking culture and asset values,2,Project Chartering and Business Case Development,0.3486,False
+R08.15,research,8,Data Collection,Doctoral survey and interview execution,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.355,False
+R08.16,research,8,Data Collection,Likert-scale rating tool deployment,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.3036,False
+R08.17,research,8,Data Collection,Pre-defined scoping data extraction,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.309,False
+R09.01,research,9,Data Analysis,Bibliometric layout algorithms,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.2761,False
+R09.02,research,9,Data Analysis,Statistical and qualitative data processing,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.3508,False
+R09.03,research,9,Data Analysis,AI/ML predictive analytics,False,P05.05,Schedule and cost analysis,5,Schedule Estimation and Milestone Planning,0.3335,False
+R09.04,research,9,Data Analysis,Non-parametric hypothesis testing,False,P01.06,Exploratory success/failure diagnosis,1,Project Conception and Feasibility Analysis,0.3928,False
+R09.05,research,9,Data Analysis,Structural equation modeling and regression,False,P01.03,Strategic alignment evaluation,1,Project Conception and Feasibility Analysis,0.508,True
+R09.06,research,9,Data Analysis,NLP and sentiment analysis,False,P03.03,Stakeholder sentiment analysis,3,Stakeholder Analysis and Requirements Gathering,0.7238,True
+R09.07,research,9,Data Analysis,Topic modeling,False,P11.02,Strategic adjustment management,11,Change Control and Variance Mitigation,0.4007,False
+R09.08,research,9,Data Analysis,Social network and topic analysis,False,P03.06,Collaborative brainstorming,3,Stakeholder Analysis and Requirements Gathering,0.2991,False
+R09.09,research,9,Data Analysis,Evaluating structural constructs,False,P01.03,Strategic alignment evaluation,1,Project Conception and Feasibility Analysis,0.4383,False
+R09.10,research,9,Data Analysis,Scientometric co-occurrence mapping,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.4949,False
+R09.11,research,9,Data Analysis,Linguistic and sentiment analysis,False,P03.03,Stakeholder sentiment analysis,3,Stakeholder Analysis and Requirements Gathering,0.5035,True
+R09.12,research,9,Data Analysis,DSR validation and dynamism testing,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.685,True
+R09.13,research,9,Data Analysis,Internal consistency reliability testing,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.4537,False
+R09.14,research,9,Data Analysis,Thematic literature analysis,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.4553,False
+R09.15,research,9,Data Analysis,TCCM systematic synthesis,False,P09.05,Incremental development,9,Project Execution and Iterative Implementation,0.4499,False
+R09.16,research,9,Data Analysis,PAGER framework mapping,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.4676,False
+R10.01,research,10,Interpretation and Discussion of Findings,Mean score evaluation,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.4066,False
+R10.02,research,10,Interpretation and Discussion of Findings,Measuring academic performance and retention,False,P10.03,Performance tracking and KPIs,10,"Monitoring, Controlling, and Quality Assurance",0.407,False
+R10.03,research,10,Interpretation and Discussion of Findings,Evaluating technology impacts,False,P04.03,Task boundary modeling,4,Scope Baseline and WBS Design,0.4104,False
+R10.04,research,10,Interpretation and Discussion of Findings,Comparing performance and completion times,False,P10.03,Performance tracking and KPIs,10,"Monitoring, Controlling, and Quality Assurance",0.4606,False
+R10.05,research,10,Interpretation and Discussion of Findings,Perceived importance correlation analysis,False,P10.03,Performance tracking and KPIs,10,"Monitoring, Controlling, and Quality Assurance",0.4365,False
+R10.06,research,10,Interpretation and Discussion of Findings,Deductive and structured diagnosis,False,P10.05,Verification and validation testing,10,"Monitoring, Controlling, and Quality Assurance",0.4795,False
+R10.07,research,10,Interpretation and Discussion of Findings,Structural equation interpretation,False,P01.03,Strategic alignment evaluation,1,Project Conception and Feasibility Analysis,0.9181,True
+R10.08,research,10,Interpretation and Discussion of Findings,Moderating effect analysis,False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.4034,False
+R10.09,research,10,Interpretation and Discussion of Findings,Mixed-methods evaluation of competitive advantage,False,P02.03,Formulating hybrid initiation rules,2,Project Chartering and Business Case Development,0.3975,False
+R10.10,research,10,Interpretation and Discussion of Findings,"Dependability, reflexivity, and transference",False,P10.07,Qualitative rigour assessment (TACT),10,"Monitoring, Controlling, and Quality Assurance",0.5057,True
+R10.11,research,10,Interpretation and Discussion of Findings,Mapping reporting impacts,False,P03.04,Mapping community needs,3,Stakeholder Analysis and Requirements Gathering,0.4706,False
+R11.01,research,11,Writing the Research Report/Dissertation,Enhancing academic writing,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.3517,False
+R11.02,research,11,Writing the Research Report/Dissertation,Structuring term papers,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.4239,False
+R11.03,research,11,Writing the Research Report/Dissertation,Documenting lessons learned,False,P08.04,Communication management tailoring,8,Team Mobilization and Communication Planning,0.4912,False
+R11.04,research,11,Writing the Research Report/Dissertation,Authoring doctoral dissertations,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.356,False
+R11.05,research,11,Writing the Research Report/Dissertation,Research article introductions,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.386,False
+R11.06,research,11,Writing the Research Report/Dissertation,Analyzing interpersonal negation,False,P12.04,Layperson dissemination,12,Dissemination of Research Findings,0.2772,False
+R11.07,research,11,Writing the Research Report/Dissertation,Identifying negative markers,False,P10.04,Quality testing and QA,10,"Monitoring, Controlling, and Quality Assurance",0.2651,False
+R11.08,research,11,Writing the Research Report/Dissertation,Interactional hedging,False,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,0.4126,False
+R11.09,research,11,Writing the Research Report/Dissertation,Guiding EAP writing research,False,P12.05,Academic journal publication,12,Dissemination of Research Findings,0.3664,False
+R12.01,research,12,Dissemination of Research Findings,Informing public science policy,True,P12.01,Informing public science policy,12,Dissemination of Research Findings,1.0,True
+R12.02,research,12,Dissemination of Research Findings,Proposing future research trajectories,True,P12.02,Proposing future research trajectories,12,Dissemination of Research Findings,1.0,True
+R12.03,research,12,Dissemination of Research Findings,DSR communication phase,True,P12.03,DSR communication phase,12,Dissemination of Research Findings,1.0,True
+R12.04,research,12,Dissemination of Research Findings,Layperson dissemination,True,P12.04,Layperson dissemination,12,Dissemination of Research Findings,1.0,True
+R12.05,research,12,Dissemination of Research Findings,Academic journal publication,True,P12.05,Academic journal publication,12,Dissemination of Research Findings,1.0,True
+R12.06,research,12,Dissemination of Research Findings,Conference dissemination,True,P12.06,Conference dissemination,12,Dissemination of Research Findings,1.0,True
+P01.01,pm,1,Project Conception and Feasibility Analysis,Nonparametric cost estimation,False,R10.07,Structural equation interpretation,10,Interpretation and Discussion of Findings,0.4413,False
+P01.02,pm,1,Project Conception and Feasibility Analysis,Initiation planning,False,R01.05,DSR problem identification,1,Identifying a Research Problem,0.4533,False
+P01.03,pm,1,Project Conception and Feasibility Analysis,Strategic alignment evaluation,False,R10.07,Structural equation interpretation,10,Interpretation and Discussion of Findings,0.9181,True
+P01.04,pm,1,Project Conception and Feasibility Analysis,Viability/Feasibility analysis,False,R12.01,Informing public science policy,12,Dissemination of Research Findings,0.4795,False
+P01.05,pm,1,Project Conception and Feasibility Analysis,Problem class definition,False,R01.06,Conceptualizing problem classes,1,Identifying a Research Problem,0.7914,True
+P01.06,pm,1,Project Conception and Feasibility Analysis,Exploratory success/failure diagnosis,False,R05.06,Exploratory comparative design,5,Selecting a Research Design and Methods,0.5539,True
+P02.01,pm,2,Project Chartering and Business Case Development,Project boundary formulation,False,R02.02,Scoping and boundary definition,2,Refining a Research Topic,0.7163,True
+P02.02,pm,2,Project Chartering and Business Case Development,Establishing project mandates,False,R12.01,Informing public science policy,12,Dissemination of Research Findings,0.6246,True
+P02.03,pm,2,Project Chartering and Business Case Development,Formulating hybrid initiation rules,False,R10.07,Structural equation interpretation,10,Interpretation and Discussion of Findings,0.4771,False
+P02.04,pm,2,Project Chartering and Business Case Development,Competency baseline setting,False,R04.01,Aim setting for target skills,4,Developing Research Questions and Objectives,0.499,False
+P02.05,pm,2,Project Chartering and Business Case Development,Linking culture and asset values,False,R10.07,Structural equation interpretation,10,Interpretation and Discussion of Findings,0.425,False
+P03.01,pm,3,Stakeholder Analysis and Requirements Gathering,Stakeholder management tailoring,False,R01.07,Defining organizational needs,1,Identifying a Research Problem,0.4289,False
+P03.02,pm,3,Stakeholder Analysis and Requirements Gathering,Stakeholder engagement workflows,False,R01.12,Supply chain thematic mapping,1,Identifying a Research Problem,0.4629,False
+P03.03,pm,3,Stakeholder Analysis and Requirements Gathering,Stakeholder sentiment analysis,False,R09.06,NLP and sentiment analysis,9,Data Analysis,0.7238,True
+P03.04,pm,3,Stakeholder Analysis and Requirements Gathering,Mapping community needs,False,R10.11,Mapping reporting impacts,10,Interpretation and Discussion of Findings,0.4706,False
+P03.05,pm,3,Stakeholder Analysis and Requirements Gathering,Subject-object stakeholder mapping,False,R03.08,Concept examination,3,Conducting a Literature Review,0.5003,True
+P03.06,pm,3,Stakeholder Analysis and Requirements Gathering,Collaborative brainstorming,False,R01.05,DSR problem identification,1,Identifying a Research Problem,0.4642,False
+P04.01,pm,4,Scope Baseline and WBS Design,Scope management,False,R02.02,Scoping and boundary definition,2,Refining a Research Topic,0.6309,True
+P04.02,pm,4,Scope Baseline and WBS Design,Standard process mapping,False,R03.08,Concept examination,3,Conducting a Literature Review,0.5434,True
+P04.03,pm,4,Scope Baseline and WBS Design,Task boundary modeling,False,R08.10,Behavioral digital asset collection,8,Data Collection,0.5509,True
+P04.04,pm,4,Scope Baseline and WBS Design,Project integration management,False,R03.08,Concept examination,3,Conducting a Literature Review,0.5346,True
+P04.05,pm,4,Scope Baseline and WBS Design,Data Management Plan (DMP / DATA MANAGEMENT PLAN) integration,False,R12.03,DSR communication phase,12,Dissemination of Research Findings,0.3799,False
+P05.01,pm,5,Schedule Estimation and Milestone Planning,Milestone tracking,False,R02.02,Scoping and boundary definition,2,Refining a Research Topic,0.5026,True
+P05.02,pm,5,Schedule Estimation and Milestone Planning,Joint timetable design,False,R05.02,Longitudinal studies,5,Selecting a Research Design and Methods,0.402,False
+P05.03,pm,5,Schedule Estimation and Milestone Planning,Activity sequencing,False,R01.05,DSR problem identification,1,Identifying a Research Problem,0.4522,False
+P05.04,pm,5,Schedule Estimation and Milestone Planning,Digital-twin simulation and deduction,False,R05.15,Design Science Research (DSR) cycles,5,Selecting a Research Design and Methods,0.3426,False
+P05.05,pm,5,Schedule Estimation and Milestone Planning,Schedule and cost analysis,False,R09.05,Structural equation modeling and regression,9,Data Analysis,0.3778,False
+P06.01,pm,6,Resource Allocation and Budgeting,Resource allocation optimization,False,R01.12,Supply chain thematic mapping,1,Identifying a Research Problem,0.3988,False
+P06.02,pm,6,Resource Allocation and Budgeting,Nonparametric cost estimating,False,R08.14,Researcher-administered surveys,8,Data Collection,0.293,False
+P06.03,pm,6,Resource Allocation and Budgeting,Resource management tailoring,False,R03.08,Concept examination,3,Conducting a Literature Review,0.4616,False
+P06.04,pm,6,Resource Allocation and Budgeting,Digital asset provisioning,False,R08.10,Behavioral digital asset collection,8,Data Collection,0.6245,True
+P06.05,pm,6,Resource Allocation and Budgeting,Managing resource constraints,False,R01.07,Defining organizational needs,1,Identifying a Research Problem,0.5616,True
+P06.06,pm,6,Resource Allocation and Budgeting,"HSE / HEALTH, SAFETY, AND ENVIRONMENTAL MANAGEMENT (Health, safety, Environment) budgeting",False,R05.20,Scoping review methodology,5,Selecting a Research Design and Methods,0.3236,False
+P07.01,pm,7,Risk Management and Procurement Strategy,"HSE / HEALTH, SAFETY, AND ENVIRONMENTAL MANAGEMENT risk integration",False,R07.01,Psychosocial risk mitigation,7,Research Ethics,0.3504,False
+P07.02,pm,7,Risk Management and Procurement Strategy,Ecological safety forecasting,False,R09.03,AI/ML predictive analytics,9,Data Analysis,0.2515,False
+P07.03,pm,7,Risk Management and Procurement Strategy,Contract management,False,R03.16,TCCM framework synthesis,3,Conducting a Literature Review,0.4399,False
+P07.04,pm,7,Risk Management and Procurement Strategy,Automated contract execution,False,R08.10,Behavioral digital asset collection,8,Data Collection,0.2558,False
+P07.05,pm,7,Risk Management and Procurement Strategy,Claim administration,False,R07.06,Perceived fairness and dispute reduction,7,Research Ethics,0.6774,True
+P07.06,pm,7,Risk Management and Procurement Strategy,Supply chain risk mitigation,False,R01.12,Supply chain thematic mapping,1,Identifying a Research Problem,0.422,False
+P08.01,pm,8,Team Mobilization and Communication Planning,HR management and organizational culture,False,R03.07,Theoretical synthesization,3,Conducting a Literature Review,0.4055,False
+P08.02,pm,8,Team Mobilization and Communication Planning,Multi-cultural team mobilization,False,R03.08,Concept examination,3,Conducting a Literature Review,0.3943,False
+P08.03,pm,8,Team Mobilization and Communication Planning,Virtual team setup,False,R12.06,Conference dissemination,12,Dissemination of Research Findings,0.3896,False
+P08.04,pm,8,Team Mobilization and Communication Planning,Communication management tailoring,False,R11.03,Documenting lessons learned,11,Writing the Research Report/Dissertation,0.4912,False
+P08.05,pm,8,Team Mobilization and Communication Planning,Project role alignment,False,R10.07,Structural equation interpretation,10,Interpretation and Discussion of Findings,0.4779,False
+P08.06,pm,8,Team Mobilization and Communication Planning,Specific training,False,R03.16,TCCM framework synthesis,3,Conducting a Literature Review,0.3982,False
+P09.01,pm,9,Project Execution and Iterative Implementation,Task deployment,False,R03.16,TCCM framework synthesis,3,Conducting a Literature Review,0.41,False
+P09.02,pm,9,Project Execution and Iterative Implementation,Agile sprints and Scrum,False,R05.12,Scrum-facilitated action research,5,Selecting a Research Design and Methods,0.5548,True
+P09.03,pm,9,Project Execution and Iterative Implementation,Hybrid approach execution,False,R03.08,Concept examination,3,Conducting a Literature Review,0.4347,False
+P09.04,pm,9,Project Execution and Iterative Implementation,Scaled Agile Framework (SAFe / Scaled Agile Framework),False,R05.12,Scrum-facilitated action research,5,Selecting a Research Design and Methods,0.4174,False
+P09.05,pm,9,Project Execution and Iterative Implementation,Incremental development,False,R05.15,Design Science Research (DSR) cycles,5,Selecting a Research Design and Methods,0.84,True
+P09.06,pm,9,Project Execution and Iterative Implementation,Continuous Lean production,False,R03.08,Concept examination,3,Conducting a Literature Review,0.3273,False
+P10.01,pm,10,"Monitoring, Controlling, and Quality Assurance",Project controlling processes,False,R03.08,Concept examination,3,Conducting a Literature Review,0.4541,False
+P10.02,pm,10,"Monitoring, Controlling, and Quality Assurance",Real-time progress monitoring,False,R11.03,Documenting lessons learned,11,Writing the Research Report/Dissertation,0.2641,False
+P10.03,pm,10,"Monitoring, Controlling, and Quality Assurance",Performance tracking and KPIs,False,R10.07,Structural equation interpretation,10,Interpretation and Discussion of Findings,0.5127,True
+P10.04,pm,10,"Monitoring, Controlling, and Quality Assurance",Quality testing and QA,False,R07.04,Protecting against false accusations,7,Research Ethics,0.4669,False
+P10.05,pm,10,"Monitoring, Controlling, and Quality Assurance",Verification and validation testing,False,R06.04,Iterative framework validation,6,Scientific Review,0.7072,True
+P10.06,pm,10,"Monitoring, Controlling, and Quality Assurance",Safety quality supervision,False,R07.04,Protecting against false accusations,7,Research Ethics,0.4285,False
+P10.07,pm,10,"Monitoring, Controlling, and Quality Assurance",Qualitative rigour assessment (TACT),False,R06.05,Assessing qualitative rigour,6,Scientific Review,0.8762,True
+P11.01,pm,11,Change Control and Variance Mitigation,Variance early warning systems,False,R07.01,Psychosocial risk mitigation,7,Research Ethics,0.2875,False
+P11.02,pm,11,Change Control and Variance Mitigation,Strategic adjustment management,False,R10.07,Structural equation interpretation,10,Interpretation and Discussion of Findings,0.4837,False
+P11.03,pm,11,Change Control and Variance Mitigation,Agile change response,False,R05.12,Scrum-facilitated action research,5,Selecting a Research Design and Methods,0.5108,True
+P11.04,pm,11,Change Control and Variance Mitigation,Waterfall-to-Agile transition,False,R06.04,Iterative framework validation,6,Scientific Review,0.4136,False
+P11.05,pm,11,Change Control and Variance Mitigation,Mitigating work-intensification risks,False,R07.01,Psychosocial risk mitigation,7,Research Ethics,0.642,True
+P12.01,pm,12,Dissemination of Research Findings,Informing public science policy,True,R12.01,Informing public science policy,12,Dissemination of Research Findings,1.0,True
+P12.02,pm,12,Dissemination of Research Findings,Proposing future research trajectories,True,R12.02,Proposing future research trajectories,12,Dissemination of Research Findings,1.0,True
+P12.03,pm,12,Dissemination of Research Findings,DSR communication phase,True,R12.03,DSR communication phase,12,Dissemination of Research Findings,1.0,True
+P12.04,pm,12,Dissemination of Research Findings,Layperson dissemination,True,R12.04,Layperson dissemination,12,Dissemination of Research Findings,1.0,True
+P12.05,pm,12,Dissemination of Research Findings,Academic journal publication,True,R12.05,Academic journal publication,12,Dissemination of Research Findings,1.0,True
+P12.06,pm,12,Dissemination of Research Findings,Conference dissemination,True,R12.06,Conference dissemination,12,Dissemination of Research Findings,1.0,True

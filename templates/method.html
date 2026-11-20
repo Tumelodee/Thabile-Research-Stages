@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}How it works{% endblock %}
+{% block content %}
+<section class="prose">
+  <h1>How it works</h1>
+  <h2>The data</h2>
+  <p>Each text file is one stage. Its first line is the stage name and every bullet is one item (a label, then a description). The research list has 12 stages and the project management list has 12.{% if n_rep %} {{ n_rep }} items had text damaged by find-and-replace accidents in the middle of words (for example the letters "cre" in "incremental" replaced by a long phrase, and "safe" in "safety" replaced by "SAFe / Scaled Agile Framework"); these were repaired automatically and are marked "repaired" on the Items page.{% endif %}{% if n_ident %} {{ n_ident }} items are word for word identical in both lists, because stage 12 (Dissemination of Research Findings) is the same text on both sides. They match perfectly by construction, so they are left out of the headline figures unless you choose otherwise.{% endif %}</p>
+
+  <h2>Similarity between items</h2>
+  <p>The label and description of each item are turned into a vector by the chosen method, and two items are compared by the cosine of their vectors (0 to 1 here). The default method, a sentence-embedding model, compares meaning, so "problem class definition" and "conceptualizing problem classes" count as close even though the words differ. The tf-idf method compares shared words only.</p>
+
+  <h2>The measures</h2>
+  <dl class="formulas">
+    <dt>Best match</dt>
+    <dd>For an item, the most similar item on the other side.</dd>
+    <dt>Aligned</dt>
+    <dd>An item whose best match is at least the chosen similarity. The share of aligned items is reported separately for each side, because the two lists are different sizes.</dd>
+    <dt>Stage match score</dt>
+    <dd>For a research stage and a project management stage: the average best-match similarity of the research items inside that project management stage, averaged with the same measure in the other direction, scaled to 0 to 100.</dd>
+    <dt>Whole-stage score</dt>
+    <dd>An alternative stage score. Each stage becomes one vector, the average of the vectors of its items, and two stages are compared by the cosine of those vectors. It looks at what a stage is about overall, but it blurs the separate activities inside a stage, so a mixed stage looks vaguely similar to many others. Choose it under "Stage score based on" on the Overview and compare it with the item-based grid; the page reports how closely the two agree.</dd>
+    <dt>Language-model verdict</dt>
+    <dd>For each item's closest match, a language model reads both items and answers "same", "partly" or "different" with a one-sentence reason (<code>python judge_pairs.py</code>). This checks whether a high similarity really means the same activity, and it is the closest this tool comes to comparing the process rather than the wording. Only closest matches are judged, and a language model can be wrong, so read the reasons on the Language-model check page.</dd>
+    <dt>Order match</dt>
+    <dd>Each research stage's closest project management stage is found, and the stage numbers are compared with a Spearman rank correlation. Both lists run from start to end, so a high value means the stages line up in sequence.</dd>
+  </dl>
+
+  <h2>Read with care</h2>
+  <ul>
+    <li>The percentage of aligned items depends on the chosen similarity, and a good value differs by method. Open the Items page, sort by similarity, and look at pairs around your chosen value to see where "the same thing" starts.</li>
+    <li>Stages hold 4 to 23 items, so stage scores for small stages are less stable.</li>
+    <li>Two items can be related without being the same activity. Alignment here means similar content, not proof that a research stage is carried out by a project management stage.</li>
+  </ul>
+</section>
+{% endblock %}

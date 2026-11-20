@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}No results yet{% endblock %}
+{% block content %}
+<section class="prose">
+  <h1>No results to show yet</h1>
+  <p>This page reads the files that <code>align_stages.py</code> writes. None were found in:</p>
+  <p class="path">{{ results_dir }}</p>
+  <p>Run it first, then reload this page:</p>
+  <pre>python align_stages.py</pre>
+  <p>The first run downloads the sentence-embedding model, so it needs internet access.</p>
+</section>
+{% endblock %}

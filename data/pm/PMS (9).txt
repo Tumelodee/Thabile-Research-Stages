@@ -1,0 +1,7 @@
+9. Project Execution and Iterative Implementation
+•	Task deployment: Executing core deliverables using traditional software project management frameworks.
+•	Agile sprints and Scrum: Utilizing Scrum methodology, Kanban, and self-regulated iteration loops to manage cloud service delivery and software complexity.
+•	Hybrid approach execution: Executing digitization projects using classical project management principles combined with agile methods.
+•	Scaled Agile Framework (SAFe / Scaled Agile Framework): Adopting SAFe / Scaled Agile Framework practices to manage multi-team agile coordination in large, distributed organizations.
+•	InCRE / Commercial Real Estate project-based managementmental development: Applying design science research (DSR) phases (design, development, demonstration) in iterative cycles.
+•	Continuous Lean production: Applying lean management principles to continuously streamline workflows and minimize waste.

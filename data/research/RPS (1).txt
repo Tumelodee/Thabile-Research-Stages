@@ -1,0 +1,13 @@
+1. Identifying a Research Problem
+•	Systematic search and selection: Performing search queries across bibliographic databases such as Web of Science, Scopus, and ProQuest.
+•	Gap and scarcity analysis: Identifying a scarcity of research in emerging or critical domains.
+•	Identifying future research areas: Reviewing recent literature to point out gaps and specify available research areas for future studies.
+•	Addressing underexplored sectors: Targeting specific industrial or societal sectors where literature and best practices remain underexplored.
+•	DSR problem identification: Initiating problem identification as the core starting phase of Design Science Research (DSR).
+•	Conceptualizing problem classes: Defining and conceptualizing classes of disciplinary problems, distinguishing between academic-centric Mode 1 knowledge production and practical, transdisciplinary Mode 2 knowledge production.
+•	Defining organizational needs: Identifying deficiencies in current knowledge domains to establish the definitive requirement to enhance performance.
+•	Determining state-of-the-art and gaps: Gaining clarity over the state-of-the-art and gaps to direct future investigation and practice.
+•	Identifying blind spots: Systematizing and reorienting research to expose blind spots on process stages and organizational levels.
+•	Structuring research agendas: Conducting a systematic review to identify prominent determinants, causal connections, and outcomes, thereby establishing a research agenda.
+•	Critical research gap assessment: Evaluating the existing literature pool to critically assess research gaps and provide future research directions.
+•	Supply chain thematic mapping: Classifying thematic findings into pre-study and post-study categories to pinpoint opportunities.

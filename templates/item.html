@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}{{ x.item_id }}{% endblock %}
+{% block content %}
+<p class="crumb"><a href="{{ back }}">Items in stage {{ x.stage_no }}</a></p>
+<section class="intro">
+  <h1 class="skill-title">{{ x.skill_label }}</h1>
+  <p class="lede"><strong>{{ x.item_id }}</strong>, {{ 'research' if x.side == 'research' else 'project management' }} stage {{ x.stage_no }}: {{ x.stage }}.
+    {% if x.repaired %}<span class="tag" title="Text damaged by a find-and-replace was repaired">repaired</span>{% endif %}
+    {% if x.identical_other_side %}<span class="tag">identical in both lists</span>{% endif %}</p>
+  <p class="itemtext">{{ x.description }}</p>
+</section>
+
+<section class="presence">
+  <h2>Closest match overall</h2>
+  <div class="presence-line">
+    <span class="plabel">Best</span>
+    <div><a href="{{ best.item_url }}"><strong>{{ best.best_label }}</strong></a> ({{ best.best_id }}, stage {{ best.stage_no }}: {{ best.stage }}), similarity <strong>{{ '%.2f'|format(best.sim) }}</strong>. {% if best.sim >= thr %}That is at or above {{ '%.2f'|format(thr) }}, so this item is aligned.{% else %}That is below {{ '%.2f'|format(thr) }}, so this item is not aligned.{% endif %}</div>
+  </div>
+  {% if second is not none %}
+  <div class="presence-line">
+    <span class="plabel">Next best stage</span>
+    <div>Stage {{ second.stage_no }}: {{ second.stage }}, similarity {{ '%.2f'|format(second.sim) }}. The gap to the best match is {{ '%.2f'|format(best.sim - second.sim) }}.</div>
+  </div>
+  {% endif %}
+</section>
+
+<section>
+  <h2>Its closest item in each {{ 'project management' if other == 'pm' else 'research' }} stage</h2>
+  <div class="tablewrap">
+  <table class="plain skills items">
+    <thead>
+      <tr>
+        <th scope="col">{{ 'Project management' if other == 'pm' else 'Research' }} stage</th>
+        <th scope="col">Closest item in that stage</th>
+        <th scope="col" class="barcol">Similarity</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in rows %}
+      <tr class="{{ 'bestrow' if r.is_best else ('' if r.aligned else 'dim') }}">
+        <td><a href="{{ r.pair_url }}"><strong>{{ r.stage_no }}. {{ r.stage }}</strong></a><br><span class="sub">{{ r.n_items }} items</span></td>
+        <td>
+          <a href="{{ r.item_url }}"><strong>{{ r.best_label }}</strong></a> <span class="sub">{{ r.best_id }}</span>{% if r.ident %} <span class="tag">identical in both lists</span>{% endif %}
+          <br><span class="desc">{{ r.best_desc }}</span>
+          {% if r.reason %}<br><span class="reason">Language model: {{ r.reason }}</span>{% endif %}
+        </td>
+        <td class="barcol">
+          <div class="hbar"><span style="width:{{ '%.1f'|format(100 * r.sim) if r.sim > 0 else 0 }}%"></span></div>
+          <span class="barval">{{ '%.2f'|format(r.sim) }}</span>
+          <br><span class="sub">{{ 'best match' if r.is_best else ('aligned' if r.aligned else 'not aligned') }}</span>
+          {% if r.verdict %}<br><span class="verdict v-{{ r.verdict }}">model: {{ r.verdict }}</span>{% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="hint">Items that are identical in both lists are left out of the headline figures on the Overview but are shown here for completeness. Each similarity here is this item's contribution to the stage-against-stage grid. Click a stage to compare its items with this stage.</p>
+</section>
+{% endblock %}

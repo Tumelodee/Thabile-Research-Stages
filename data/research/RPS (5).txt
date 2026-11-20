@@ -1,0 +1,24 @@
+5. Selecting a Research Design and Methods
+•	Quasi-experimental study design: Setting up quasi-experimental studies featuring pre-posttests, speaking rubrics, and self-reflection questionnaires.
+•	Longitudinal studies: Designing longitudinal studies covering defined academic semesters.
+•	Quantitative scale adaptation: Utilizing quantitative methods and adapting validated scales, such as Wong and Law's WLEIS self-report emotional intelligence scale.
+•	Controlled experimental design: Planning a controlled experiment to compare student performance, marks, and completion times across different task conditions.
+•	Qualitative interviews: Conducting qualitative interviews to explore user strategies and accessibility challenges.
+•	Exploratory comparative design: Designing an exploratory framework to evaluate and compare success and failure rates.
+•	Structural equation modeling (SEM): Designing research models based on structural equations.
+•	World Café workshop methodology: Implementing an innovative world café workshop research method to identify and summarize single impact factors.
+•	Deductive and structured interviews: Adopting a deductive method as part of theoretical studies and a structured interview for empirical studies.
+•	Social network and topic modeling: Employing social network analysis and topic modeling to analyze communications.
+•	Field-based structural modeling: Developing a model based on structural equations and distributing questionnaires within a field study.
+•	Scrum-facilitated action research: Managing student research teams using Scrum methodology to promote self-regulated learning processes.
+•	Empirical software engineering surveys: Designing empirical investigations using surveys and direct analysis of international respondents.
+•	Researcher-administered surveys: Designing and administering surveys with the assistance of a purposive sample of brokers and architects.
+•	Design Science Research (DSR) cycles: Adopting design science research methodology characterized by incremental development, iterative restrictions, and validation tests.
+•	Assistive research framework methodology: Designing a mixed-methods framework using a deductive/quantitative survey questionnaire and an inductive/qualitative semi-structured interview.
+•	TACT qualitative framework: Implementing the TACT (Trustworthiness, Auditability, Credibility, and Transferability) qualitative research framework, supported by a 16-item rating tool.
+•	Activist and YPAR methodologies: Utilizing activist research and Youth Participatory Action Research (YPAR) as guided frameworks.
+•	Yarning and Relational Yarning: Adopting Yarning and Relational Yarning as culturally secure research methodologies.
+•	Scoping review methodology: Outlining scoping reviews to explore, map, and describe participatory methods, frameworks, guidelines, or tools.
+•	Indigenous practice frameworks: Formulating practice frameworks incorporating understanding of historical culture and community relationships.
+•	Patient-centered outcomes research: Engaging in patient-centered comparative effectiveness research to improve trial design.
+•	Pragmatic trial design: Utilizing pragmatic trial design methodology and randomized controlled trials (RCTs) in translational settings.

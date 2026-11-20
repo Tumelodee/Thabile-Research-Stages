@@ -1,0 +1,6 @@
+{
+  "method": "minilm",
+  "model": "all-MiniLM-L6-v2",
+  "default_threshold": 0.5,
+  "created": "2026-11-19T09:34:46"
+}

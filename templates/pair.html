@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}{{ r_name }} and {{ p_name }}{% endblock %}
+{% block content %}
+<p class="crumb"><a href="{{ back }}">Overview</a></p>
+<section class="intro">
+  <h1 class="skill-title">{{ r_no }}. {{ r_name }} <span class="vs">against</span> {{ p_no }}. {{ p_name }}</h1>
+  <p class="lede">Research stage {{ r_no }} compared with project management stage {{ p_no }}.{% if score is not none %} Stage match score: {{ '%.0f'|format(100 * score) }} out of 100.{% endif %}</p>
+</section>
+{% if not left %}
+  <p class="prose-note">No items to compare: these stages hold only identical items, which are left out. Choose "Include" under Identical items on the Overview to see them.</p>
+{% else %}
+<section>
+  <h2>Each research item and its closest item in this project management stage</h2>
+  <div class="tablewrap">
+  <table class="plain skills items">
+    <thead><tr><th scope="col">Research item</th><th scope="col">Closest project management item</th><th scope="col" class="num">Similarity</th></tr></thead>
+    <tbody>
+    {% for x in left %}
+      <tr>
+        <td><strong>{{ x.label }}</strong><br><span class="desc">{{ x.desc }}</span></td>
+        <td><strong>{{ x.m_label }}</strong><br><span class="desc">{{ x.m_desc }}</span></td>
+        <td class="num">{{ '%.2f'|format(x.sim) }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+<section>
+  <h2>Each project management item and its closest item in this research stage</h2>
+  <div class="tablewrap">
+  <table class="plain skills items">
+    <thead><tr><th scope="col">Project management item</th><th scope="col">Closest research item</th><th scope="col" class="num">Similarity</th></tr></thead>
+    <tbody>
+    {% for x in right %}
+      <tr>
+        <td><strong>{{ x.label }}</strong><br><span class="desc">{{ x.desc }}</span></td>
+        <td><strong>{{ x.m_label }}</strong><br><span class="desc">{{ x.m_desc }}</span></td>
+        <td class="num">{{ '%.2f'|format(x.sim) }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

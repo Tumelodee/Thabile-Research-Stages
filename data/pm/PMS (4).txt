@@ -1,0 +1,6 @@
+4. Scope Baseline and WBS Design
+•	Scope management: Managing, maintaining, and controlling project scope parameters to support phased deliverables.
+•	Standard process mapping: Decomposing standard processes and implementing project management meta-methodologies to fit organizational needs.
+•	Task boundary modeling: Mapping task boundaries to structure behavioral and attitudinal digital assets.
+•	Project integration management: Consolidating single impact factors and aligning scope elements across multiple project knowledge areas.
+•	Data Management Plan (DMP / DATA MANAGEMENT PLAN) integration: Reusing pre-existing project roles and system information within PMBOK / PROJECT MANAGEMENT BODY OF KNOWLEDGE structures to automate metadata scope population.

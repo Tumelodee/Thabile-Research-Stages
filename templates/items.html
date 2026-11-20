@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Items{% endblock %}
+{% block content %}
+<section class="intro">
+  <h1>{{ 'Research' if side == 'research' else 'Project management' }} items and their closest match</h1>
+  <p class="lede">Each item is shown with the most similar item on the {{ 'project management' if side == 'research' else 'research' }} side. An item is aligned when that similarity is at least {{ '%.2f'|format(thr) }}.</p>
+</section>
+
+<form class="controls" method="get" action="{{ url_for('items') }}">
+  <input type="hidden" name="threshold" value="{{ form.threshold }}">
+  <input type="hidden" name="identical" value="{{ form.identical }}">
+  <label class="field">Items from
+    <select name="side" onchange="this.form.requestSubmit()">
+      <option value="research" {% if side == 'research' %}selected{% endif %}>Research stages</option>
+      <option value="pm" {% if side == 'pm' %}selected{% endif %}>Project management stages</option>
+    </select>
+  </label>
+  <label class="field">Stage
+    <select name="stage" onchange="this.form.requestSubmit()">
+      <option value="all">All stages</option>
+      {% for no, name in stage_names.items() %}<option value="{{ no }}" {% if form.stage == no|string %}selected{% endif %}>{{ no }}. {{ name }}</option>{% endfor %}
+    </select>
+  </label>
+  <label class="field">Show
+    <select name="status" onchange="this.form.requestSubmit()">
+      <option value="all" {% if form.status == 'all' %}selected{% endif %}>All</option>
+      <option value="aligned" {% if form.status == 'aligned' %}selected{% endif %}>Aligned only</option>
+      <option value="unaligned" {% if form.status == 'unaligned' %}selected{% endif %}>Not aligned only</option>
+    </select>
+  </label>
+  <label class="field">Order by
+    <select name="sort" onchange="this.form.requestSubmit()">
+      <option value="stage" {% if form.sort == 'stage' %}selected{% endif %}>Stage</option>
+      <option value="high" {% if form.sort == 'high' %}selected{% endif %}>Highest similarity</option>
+      <option value="low" {% if form.sort == 'low' %}selected{% endif %}>Lowest similarity</option>
+    </select>
+  </label>
+  <label class="field grow">Search
+    <input type="search" name="q" value="{{ form.q }}" placeholder="for example: risk">
+  </label>
+  <button type="submit">Update</button>
+</form>
+<div class="status">
+  <span>Open an item to see it against every stage on the other side. {{ rows|length }} of {{ total_side }} items.{% if n_hidden %} {{ n_hidden }} identical items are left out.{% endif %}</span>
+</div>
+
+{% if rows %}
+<div class="tablewrap">
+<table class="plain skills items">
+  <thead>
+    <tr>
+      <th scope="col">Item</th>
+      <th scope="col">Closest item on the {{ 'project management' if side == 'research' else 'research' }} side</th>
+      <th scope="col" class="barcol">Similarity</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in rows %}
+    <tr class="{{ '' if r.aligned else 'dim' }}">
+      <td>
+        <span class="sub">{{ r.id }} · stage {{ r.stage_no }}, {{ r.stage }}</span><br>
+        <a class="itemlink" href="{{ r.item_url }}"><strong>{{ r.label }}</strong></a>{% if r.repaired %} <span class="tag" title="Text damaged by a find-and-replace was repaired">repaired</span>{% endif %}{% if r.ident %} <span class="tag">identical in both lists</span>{% endif %}
+        {% if r.desc %}<br><span class="desc">{{ r.desc }}</span>{% endif %}
+      </td>
+      <td>
+        <span class="sub">{{ r.best_id }} · stage {{ r.best_stage_no }}, {{ r.best_stage }}</span><br>
+        <a href="{{ r.pair_url }}">{{ r.best_label }}</a>
+      </td>
+      <td class="barcol">
+        <div class="hbar"><span style="width:{{ '%.1f'|format(100 * r.sim) if r.sim > 0 else 0 }}%"></span></div>
+        <span class="barval">{{ '%.2f'|format(r.sim) }}</span>
+        <br><span class="sub">{{ 'aligned' if r.aligned else 'not aligned' }}</span>
+        {% if r.verdict %}<br><span class="verdict v-{{ r.verdict }}" title="{{ r.reason }}">model: {{ r.verdict }}</span>{% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% else %}
+  <p class="prose-note">No items match these filters.</p>
+{% endif %}
+{% endblock %}

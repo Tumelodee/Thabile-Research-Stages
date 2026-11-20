@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block title %}How aligned are the stages?{% endblock %}
+{% block content %}
+<section class="intro">
+  <h1>How aligned are the research stages and the project management stages?</h1>
+  <p class="lede">{{ s.n_research }} research items in {{ rows|length }} stages are compared with {{ s.n_pm }} project management items in {{ cols|length }} stages. Every item is matched to the most similar item on the other side, and the stages are then compared through their items.</p>
+</section>
+
+<form class="controls" method="get" action="{{ url_for('overview') }}">
+  <label class="field narrow">Count as aligned from
+    <input type="number" name="threshold" min="0.05" max="0.99" step="0.05" value="{{ form.threshold }}">
+  </label>
+  <label class="field">Stage score based on
+    <select name="basis" onchange="this.form.requestSubmit()">
+      {% for k, v in bases %}<option value="{{ k }}" {% if k == basis %}selected{% endif %}>{{ v }}</option>{% endfor %}
+    </select>
+  </label>
+  <label class="field">Identical items
+    <select name="identical" onchange="this.form.requestSubmit()">
+      <option value="exclude" {% if form.identical == 'exclude' %}selected{% endif %}>Leave out ({{ n_ident }} items)</option>
+      <option value="include" {% if form.identical == 'include' %}selected{% endif %}>Include</option>
+    </select>
+  </label>
+  <button type="submit">Update</button>
+</form>
+<p class="hint">Similarity runs from 0 (unrelated) to 1 (same meaning). "Count as aligned from" is the similarity at which two items are treated as the same thing; check a few pairs near it on the Items page before trusting a percentage.{% if n_ident %} {{ n_ident }} items have identical wording in both lists (stage 12 is the same text on both sides), so by default they are left out.{% endif %}</p>
+
+<section class="facts">
+  <div>
+    <p class="big">{{ s.cov_research|p0 }}%</p>
+    <p>of research items have a counterpart among the project management items ({{ s.n_aligned_research }} of {{ s.n_research }}).</p>
+  </div>
+  <div>
+    <p class="big">{{ s.cov_pm|p0 }}%</p>
+    <p>of project management items have a counterpart among the research items ({{ s.n_aligned_pm }} of {{ s.n_pm }}).</p>
+  </div>
+  <div>
+    <p class="big">{% if s_sel.spearman is not none %}{{ '%.2f'|format(s_sel.spearman) }}{% else %}n/a{% endif %}</p>
+    <p>order match (Spearman), for the stage score chosen above. 1 means the closest stage of each research stage follows the same order, 0 means no order.{% if s_sel.within1_research is not none %} {{ s_sel.within1_research|p0 }}% of research stages have their closest project management stage within one step of the same number.{% endif %}</p>
+  </div>
+</section>
+<p class="hint">Average best-match similarity: {{ '%.2f'|format(s.mean_best_research) }} from research to project management items, {{ '%.2f'|format(s.mean_best_pm) }} the other way. Stage pairs on the diagonal (same number) average {{ '%.2f'|format(s_sel.mean_diagonal) }}, other pairs {{ '%.2f'|format(s_sel.mean_offdiagonal) }} (on the stage score chosen above).{% if s.agreement_items_vs_whole is not none %} The item-based and whole-stage scores agree with a correlation of {{ '%.2f'|format(s.agreement_items_vs_whole) }}: {{ 'they largely tell the same story.' if s.agreement_items_vs_whole >= 0.7 else 'they disagree in places, so compare the two grids.' }}{% endif %}</p>
+
+{% if jsum %}
+<section class="judged">
+  <h2>Checked by a language model</h2>
+  <p class="hint">A language model read the closest pair for each item and judged whether the two describe the same activity. {{ jsum.n_pairs }} pairs judged{% if jsum.models %} by {{ jsum.models|join(', ') }}{% endif %}: {{ jsum.counts.get('same', 0) }} same, {{ jsum.counts.get('partly', 0) }} partly the same, {{ jsum.counts.get('different', 0) }} different.</p>
+  <div class="facts">
+    <div>
+      <p class="big">{% if jsum.above_confirmed is not none %}{{ jsum.above_confirmed|p0 }}%{% else %}n/a{% endif %}</p>
+      <p>of the {{ jsum.n_above }} pairs at or above the similarity threshold were judged the same or partly the same. This tells you how far to trust the similarity score as a measure of alignment.</p>
+    </div>
+    <div>
+      <p class="big">{{ '%.0f'|format(100 * (jsum.research.same + jsum.research.partly) / jsum.research.n) }}%</p>
+      <p>of research items have a closest match judged the same or partly the same ({{ jsum.research.same }} same, {{ jsum.research.partly }} partly), out of {{ jsum.research.n }}.</p>
+    </div>
+    <div>
+      <p class="big">{{ '%.0f'|format(100 * (jsum.pm.same + jsum.pm.partly) / jsum.pm.n) }}%</p>
+      <p>of project management items have a closest match judged the same or partly the same ({{ jsum.pm.same }} same, {{ jsum.pm.partly }} partly), out of {{ jsum.pm.n }}.</p>
+    </div>
+  </div>
+  <p class="hint">Items whose closest pair was not judged (similarity below the cut-off used by <code>judge_pairs.py</code>) count as not matched. <a href="{{ url_for('judgments', **kp) }}">See every judged pair and its reason.</a></p>
+</section>
+{% elif has_judg == false %}
+<p class="hint">No language-model check yet. Run <code>python judge_pairs.py</code> to have a model judge each item's closest match, then reload this page.</p>
+{% endif %}
+
+<section>
+  <h2>Stage against stage</h2>
+  {% if basis == 'items' %}
+  <p class="hint">Each cell scores how well one research stage and one project management stage match, from their best-matching items (0 to 100). A gold outline marks the closest project management stage for that research stage; a gold corner marks the closest research stage for that project management stage. Click a cell to compare their items.</p>
+  {% elif basis == 'whole' %}
+  <p class="hint">Each cell compares the average meaning of all the items in a research stage with the average meaning of all the items in a project management stage (0 to 100; the stand-in word-vector method can give negative values, meaning unrelated). This view blurs the individual activities, so a stage with mixed content looks vaguely similar to many stages. Click a cell to compare their items.</p>
+  {% else %}
+  <p class="hint">Each cell counts the item pairs the language model judged the same or partly the same. Only each item's closest match is judged, so the counts are small. Hover for the split. Click a cell to compare their items.</p>
+  {% endif %}
+  <div class="matrix-wrap stagegrid" role="region" aria-label="Research stage by project management stage" tabindex="0">
+    <table class="matrix">
+      <caption class="sr">Alignment score between each research stage and each project management stage</caption>
+      <thead>
+        <tr>
+          <th class="skill corner" scope="col">Research stage (rows) against project management stage (columns)</th>
+          {% for c in cols %}<th class="mod" scope="col"><a href="{{ c.url }}" title="Items in project management stage {{ c.no }}"><span>{{ c.no }}. {{ c.name }}</span></a></th>{% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in rows %}
+        <tr>
+          <th class="skill" scope="row"><a href="{{ r.url }}" title="{{ r.name }}">{{ r.no }}. {{ r.name }}</a></th>
+          {% for c in r.cells %}
+            {% if c.nan %}
+              <td class="cell absent" title="{{ c.title }}"></td>
+            {% else %}
+              <td class="cell{% if c.best %} bestcell{% endif %}{% if c.colbest %} mark{% endif %}" style="background:{{ c.bg }};color:{{ c.fg }}">
+                <a href="{{ c.url }}" title="{{ c.title }}">{{ c.text }}</a>
+              </td>
+            {% endif %}
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <div class="ramp"><span>{{ 'fewer pairs' if basis == 'judged' else 'weaker match' }}</span><i></i><span>{{ 'more pairs' if basis == 'judged' else 'stronger match' }}</span></div>
+    <p><span class="swatch absent-sw"></span>Hatched: left out because the stage holds only identical items.</p>
+  </div>
+</section>
+
+<section class="three two">
+  <div>
+    <h2>Closest project management stages for each research stage</h2>
+    <table class="plain tight closest">
+      <thead><tr><th scope="col">Research stage</th><th scope="col">Closest project management stages ({{ 'number of matching pairs' if basis == 'judged' else 'score' }})</th></tr></thead>
+      <tbody>
+      {% for t in top_r %}
+        <tr>
+          <th scope="row">{{ t.no }}. {{ names.research[t.no] }}</th>
+          <td>{% for h in t.hits %}<div class="hit"><a href="{{ url_for('pair', r=t.no, p=h.no, **kp) }}">{{ h.no }}. {{ h.name }}</a> <span class="sub">{{ ('%.1f'|format(h.v)) if basis == 'judged' else ('%.0f'|format(100 * h.v)) }}</span></div>{% else %}<span class="sub">identical text in both lists, left out</span>{% endfor %}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h2>Closest research stages for each project management stage</h2>
+    <table class="plain tight closest">
+      <thead><tr><th scope="col">Project management stage</th><th scope="col">Closest research stages ({{ 'number of matching pairs' if basis == 'judged' else 'score' }})</th></tr></thead>
+      <tbody>
+      {% for t in top_p %}
+        <tr>
+          <th scope="row">{{ t.no }}. {{ names.pm[t.no] }}</th>
+          <td>{% for h in t.hits %}<div class="hit"><a href="{{ url_for('pair', r=h.no, p=t.no, **kp) }}">{{ h.no }}. {{ h.name }}</a> <span class="sub">{{ ('%.1f'|format(h.v)) if basis == 'judged' else ('%.0f'|format(100 * h.v)) }}</span></div>{% else %}<span class="sub">identical text in both lists, left out</span>{% endfor %}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Language-model check{% endblock %}
+{% block content %}
+<section class="intro">
+  <h1>Language-model check of the closest pairs</h1>
+  {% if ready %}
+  <p class="lede">For each item, a language model read the item and its closest match on the other side and judged whether they describe the same activity. <strong>same</strong>: essentially the same activity, even if worded differently. <strong>partly</strong>: they overlap, or one is broader. <strong>different</strong>: different activities, even if some words are alike.</p>
+  {% endif %}
+</section>
+
+{% if not ready %}
+<section class="prose">
+  <p>No judged pairs found yet. This page reads <code>results/pair_judgments.csv</code>, which <code>judge_pairs.py</code> writes.</p>
+  <pre>ollama pull ministral-3:8b
+python judge_pairs.py</pre>
+  <p>It needs <a href="https://ollama.com">Ollama</a> running on your computer. Judging about 150 to 250 pairs takes several minutes, and an interrupted run continues where it stopped.</p>
+</section>
+{% else %}
+<p class="hint">Model: {{ models|join(', ') }}. Verdicts so far: {% for k, v in counts.items() %}{{ v }} {{ k }}{% if not loop.last %}, {% endif %}{% endfor %}. A language model can be wrong, so read the reasons, especially for "same" and "partly".</p>
+
+<form class="controls" method="get" action="{{ url_for('judgments') }}">
+  <input type="hidden" name="threshold" value="{{ form.threshold }}">
+  <input type="hidden" name="identical" value="{{ form.identical }}">
+  <label class="field">Verdict
+    <select name="verdict" onchange="this.form.requestSubmit()">
+      {% for k in ['all', 'same', 'partly', 'different', 'unparsed', 'error'] %}<option value="{{ k }}" {% if form.verdict == k %}selected{% endif %}>{{ 'All' if k == 'all' else k }}</option>{% endfor %}
+    </select>
+  </label>
+  <label class="field">Research stage
+    <select name="stage" onchange="this.form.requestSubmit()">
+      <option value="all">All stages</option>
+      {% for no, name in stage_names.items() %}<option value="{{ no }}" {% if form.stage == no|string %}selected{% endif %}>{{ no }}. {{ name }}</option>{% endfor %}
+    </select>
+  </label>
+  <label class="field">Order by
+    <select name="sort" onchange="this.form.requestSubmit()">
+      <option value="high" {% if form.sort == 'high' %}selected{% endif %}>Highest similarity</option>
+      <option value="low" {% if form.sort == 'low' %}selected{% endif %}>Lowest similarity</option>
+    </select>
+  </label>
+  <button type="submit">Update</button>
+</form>
+<div class="status"><span>{{ rows|length }} pairs.</span></div>
+
+{% if rows %}
+<div class="tablewrap">
+<table class="plain skills items">
+  <thead>
+    <tr>
+      <th scope="col">Research item</th>
+      <th scope="col">Closest project management item</th>
+      <th scope="col">Language model</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for x in rows %}
+    <tr>
+      <td>
+        <span class="sub">{{ x.r.stage_no }}. {{ x.r.stage }}</span><br>
+        <strong>{{ x.r.skill_label }}</strong><br><span class="desc">{{ x.r.description }}</span>
+      </td>
+      <td>
+        <span class="sub">{{ x.p.stage_no }}. {{ x.p.stage }}</span><br>
+        <strong>{{ x.p.skill_label }}</strong><br><span class="desc">{{ x.p.description }}</span>
+      </td>
+      <td>
+        <span class="verdict v-{{ x.verdict }}">{{ x.verdict }}</span> <span class="sub">similarity {{ '%.2f'|format(x.sim) }}</span>
+        <br><span class="reason">{{ x.reason }}</span>
+        <br><a class="sub" href="{{ x.pair_url }}">compare these two stages</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% else %}
+  <p class="prose-note">No pairs match these filters.</p>
+{% endif %}
+{% endif %}
+{% endblock %}

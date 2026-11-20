@@ -1,0 +1,23 @@
+3. Conducting a Literature Review
+•	Quantitative and systematic literature reviews: Running systematic searches of academic databases with defined search terms.
+•	Rigorous source pruning: Pruning datasets by eliminating controversial findings, outcomes unsubstantiated by replication, too imprecise material, or similar titles.
+•	Bibliometric and layout mapping: Using Dimensions for bibliometric mapping and VOSviewer for layout algorithms to visualize academic literature.
+•	Quality assessment reporting: Utilizing the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) reporting quality assessment tool.
+•	Methodological quality assessment: Utilizing specialized appraisal tools, specifically AMSTAR, Distiller SR, MMAT (Mixed Methods Appraisal Tool), and ROBIS.
+•	Theoretical fundamental exploration: Running systematic literature reviews to analyze theoretical fundamentals.
+•	Theoretical synthesization: Summarizing organizational behavior elements, formation paths, and characteristics based on a comprehensive literature review.
+•	Concept examination: Examining chief concepts in R&D project management literature to outline realistic management practices.
+•	Surveying digital assets: Performing a systematic literature review across top journals to identify digital assets for academic research.
+•	Process relevance tailoring: Carrying out scientific literature research to tailor and evaluate process relevance.
+•	Scientometric analysis: Executing a scientometric analysis and using VOSviewer to visualize literature across countries, scientific journals, and keywords.
+•	Multivocal literature reviews: Performing a multivocal literature review combined with empirical investigation to examine controversial topics.
+•	Journal database bibliometrics: Conducting bibliometric research of specific journal publications (e.g., Business Process Management Journal) to define classes of problems.
+•	Systematic reviews of human capital: Conducting a systematic review of studies to systematize and reorient research.
+•	Thematic literature analysis: Running a systematic review utilizing thematic analysis across multiple journals and decades.
+•	TCCM framework synthesis: Applying the TCCM (theory, context, characteristics, and methodology) framework to review a pool of literature.
+•	Scoping review protocol: Developing a scoping review protocol to synthesise evidence from a diverse global landscape.
+•	JBI scoping review methodology: Adopting the Joanna Briggs Institute (JBI) scoping review methodology and the PRISMA extension for scoping reviews.
+•	Independent dual-author screening: Ensuring that all articles are independently screened for eligibility by two authors.
+•	Standardized data extraction: Extracting data from eligible articles using a pre-defined data extraction table.
+•	PAGER framework synthesis: Synthesizing scoping results using the PAGER (Patterns, Advances, Gaps, Evidence for practice and Research recommendations) framework.
+•	Thematic post-adoption review: Conducting a systematic literature review to categorize specific research topics and track post-adoption shifts.

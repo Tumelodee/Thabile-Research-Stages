@@ -1,0 +1,7 @@
+1. Project Conception and Feasibility Analysis
+•	Nonparametric cost estimation: Implementing early-stage conceptual estimating based on project variables (cost predictors) utilizing neural networks.
+•	Initiation planning: Constructing clear rules and operational structures for initiating digitization and manufacturing projects.
+•	Strategic alignment evaluation: Designing structural equation modeling constructs to analyze the alignment of project management with strategic objectives.
+•	Viability/Feasibility analysis: Evaluating collaborative private-public R&D projects to balance uncertainty, competition, and different stakeholder goals.
+•	Problem class definition: Classifying and conceptualizing classes of disciplinary problems (distinguishing Mode 1 academic focus from Mode 2 practical applicability).
+•	Exploratory success/failure diagnosis: Conducting exploratory reviews using Mann–Whitney tests to diagnose project success and failure rates.

@@ -1,0 +1,6 @@
+2. Project Chartering and Business Case Development
+•	Project boundary formulation: Defining strict project boundaries across three primary constraints: time, tasks, and people.
+•	Establishing project mandates: Aligning projects as strategic instruments for the execution of public science, environmental, and corporate policies.
+•	Formulating hybrid initiation rules: Establishing governance and acceptance rules to integrate agile methods with classical project management structures.
+•	Competency baseline setting: Setting baselines for project manager skills, prioritizing customer orientation, business acumen, and professional competencies.
+•	Linking culture and asset values: Aligning software company size, corporate culture, and core values with commercial real estate (CRE / COMMERCIAL REAL ESTATE PROJECT-BASED MANAGEMENT) demands and physical asset decisions.

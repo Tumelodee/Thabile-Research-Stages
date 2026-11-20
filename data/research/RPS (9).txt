@@ -1,0 +1,17 @@
+9. Data Analysis
+•	Bibliometric layout algorithms: Running layout algorithms like VOSviewer and bibliometric mapping tools like Dimensions.
+•	Statistical and qualitative data processing: Applying statistical analysis and qualitative techniques to analyze survey and usage logs.
+•	AI/ML predictive analytics: Aligning heterogeneous data types to perform AI/ML enhanced analytics and train predictive yield models.
+•	Non-parametric hypothesis testing: Running the Mann–Whitney test to analyze statistical differences between groups.
+•	Structural equation modeling and regression: Developing structural equation constructs and executing regression analysis.
+•	NLP and sentiment analysis: Applying advanced Natural Language Processing (NLP) techniques, including Support Vector Machines (SVM), Long Short-Term Memory (LSTM) networks, and the VADER lexicon-based model, to analyze textual feedback.
+•	Topic modeling: Running topic modeling via Latent Dirichlet Allocation (LDA) to preprocess text and identify recurrent themes.
+•	Social network and topic analysis: Using social network analysis and topic modeling to analyze written and verbal communications.
+•	Evaluating structural constructs: Utilizing structural modeling to assess independent, moderating, and mediating relationships.
+•	Scientometric co-occurrence mapping: Running scientometric analysis and keyword visualizations with VOSviewer.
+•	Linguistic and sentiment analysis: Applying linguistic analysis, sentiment analysis, and keyword relevance scoring to unstructured, English text responses.
+•	DSR validation and dynamism testing: Subjecting mixed-methods data to tests of verification, validation, and dynamism.
+•	Internal consistency reliability testing: Computing Cronbach’s α to test the reliability and internal consistency of rating instruments.
+•	Thematic literature analysis: Utilizing thematic analysis to synthesize determinants, causal connections, and outcomes of academic papers.
+•	TCCM systematic synthesis: Reviewing articles using the TCCM framework to systematically analyze theories, contexts, characteristics, and methodologies.
+•	PAGER framework mapping: Mapping and analyzing scoping review terminology and patterns using the PAGER framework.

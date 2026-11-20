@@ -1,0 +1,18 @@
+8. Data Collection
+•	Database search extraction: Querying and extracting documents from Scopus, ProQuest, or Web of Science.
+•	ESL assessment instruments: Administering pre-posttest results, speaking rubrics, and self-reflection questionnaires.
+•	Triangulated data collection: Administering surveys, performance tests, and analyzing tool usage records over an academic semester.
+•	Online and classroom surveying: Sharing an online questionnaire electronically on social platforms or administering it in classrooms.
+•	Qualitative interviews and transcription: Conducting semi-structured interviews with older adults and utilizing automatic transcription of conversations.
+•	Survey-based investigation: Executing surveys to collect structured data within enterprises.
+•	Questionnaire distribution: Preparing and distributing questionnaires to strategic experts.
+•	World Café item documentation: Gathering and documenting single impact factor items in a collaborative workshop environment.
+•	Structured interviews: Conducting structured face-to-face interviews to gather empirical data.
+•	Behavioral digital asset collection: Collecting behavioral and attitudinal data from digital assets such as written communications, reports/records, model representations, and computer systems.
+•	Structural modeling survey collection: Distributing field study questionnaires to contract administrators.
+•	Student self-regulation surveys: Gathering insights on students' perceptions and self-regulated learning skills through course feedback.
+•	Multivocal survey administration: Collecting survey data from multiple respondents across international organizations.
+•	Researcher-administered surveys: Administering surveys directly to corporate real estate officers.
+•	Doctoral survey and interview execution: Deploying survey questionnaires and semi-structured interviews.
+•	Likert-scale rating tool deployment: Distributing a rating tool online using five-scale Likert points.
+•	Pre-defined scoping data extraction: Extracting variables from eligible articles into a pre-defined data extraction table.

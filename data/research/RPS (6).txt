@@ -1,0 +1,9 @@
+6. Scientific Review
+•	Reporting quality appraisal: Appraising manuscript quality using the PRISMA reporting quality assessment tool.
+•	Methodological quality appraisal: Evaluating study designs using AMSTAR, Distiller SR, MMAT, and ROBIS.
+•	Dataset clean-up: Pruning academic collections by eliminating controversial findings, outcomes unsubstantiated by replication, or too imprecise material.
+•	Iterative framework validation: Conducting tests of verification and validation within the iterative phases of design science research.
+•	Assessing qualitative rigour: Evaluating the rigour of qualitative studies across the four dimensions of Trustworthiness, Auditability, Credibility, and Transferability (TACT).
+•	Instrument reliability testing: Running reliability testing on rating instruments to compute internal consistency (Cronbach’s α).
+•	Dependability and reflexivity assessment: Reviewing research to facilitate reflexivity, foster dependability of outcomes, and assess the researcher's relationship with the phenomenon.
+•	Methodological peer-review: Utilizing frameworks to establish a shared language for undertaking peer-review of methodological dimensions.

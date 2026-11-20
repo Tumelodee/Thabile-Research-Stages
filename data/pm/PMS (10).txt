@@ -1,0 +1,8 @@
+10. Monitoring, Controlling, and Quality Assurance
+•	Project controlling processes: Tracking project execution progress and controlling knowledge area activities.
+•	Real-time progress monitoring: Leveraging smart contracts for the real-time monitoring of project progress.
+•	Performance tracking and KPIs: Assessing project performance, organizational learning metrics, and critical success factors.
+•	Quality testing and QA: Constructing SAFe / Scaled Agile Frameworkty-critical systems using distance-based surprise adequacy (DSA / DISTANCE-BASED SURPRISE ADEQUACY) tools to detect corner case data.
+•	Verification and validation testing: Conducting structured verification, validation, and dynamism tests across iterative phases.
+•	SAFe / Scaled Agile Frameworkty quality supervision: Executing real-time digital-twin quality supervision and testing systems (e.g., checking fire protection or waste contamination).
+•	Qualitative rigour assessment (TACT): Verifying outputs against qualitative dimensions: Trustworthiness, Auditability, CRE / Commercial Real Estate project-based managementdibility, and Transferability.
