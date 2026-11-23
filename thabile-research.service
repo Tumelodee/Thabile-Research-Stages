@@ -3,12 +3,12 @@ Description=Thabile Research Stages Flask Application
 After=network.target
 
 [Service]
-Type=notify
-User=www-data
-WorkingDirectory=/opt/thabile-research-stages
-Environment="PATH=/opt/thabile-research-stages/.venv/bin"
-Environment="RESULTS_DIR=/opt/thabile-research-stages/results"
-ExecStart=/opt/thabile-research-stages/.venv/bin/python app.py --host 0.0.0.0 --port 5011
+Type=simple
+User=root
+WorkingDirectory=/root/applications/Thabile-Research-Stages
+Environment="PATH=/root/applications/Thabile-Research-Stages/.venv/bin"
+Environment="RESULTS_DIR=/root/applications/Thabile-Research-Stages/results"
+ExecStart=/root/applications/Thabile-Research-Stages/.venv/bin/python app.py --host 0.0.0.0 --port 5011
 Restart=on-failure
 RestartSec=10
 StandardOutput=journal
