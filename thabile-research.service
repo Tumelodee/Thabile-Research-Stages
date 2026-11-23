@@ -1,0 +1,19 @@
+[Unit]
+Description=Thabile Research Stages Flask Application
+After=network.target
+
+[Service]
+Type=notify
+User=www-data
+WorkingDirectory=/opt/thabile-research-stages
+Environment="PATH=/opt/thabile-research-stages/.venv/bin"
+Environment="RESULTS_DIR=/opt/thabile-research-stages/results"
+ExecStart=/opt/thabile-research-stages/.venv/bin/python app.py --host 0.0.0.0 --port 5001
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=thabile-research
+
+[Install]
+WantedBy=multi-user.target
