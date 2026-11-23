@@ -8,7 +8,7 @@ User=www-data
 WorkingDirectory=/opt/thabile-research-stages
 Environment="PATH=/opt/thabile-research-stages/.venv/bin"
 Environment="RESULTS_DIR=/opt/thabile-research-stages/results"
-ExecStart=/opt/thabile-research-stages/.venv/bin/python app.py --host 0.0.0.0 --port 5001
+ExecStart=/opt/thabile-research-stages/.venv/bin/python app.py --host 0.0.0.0 --port 5011
 Restart=on-failure
 RestartSec=10
 StandardOutput=journal
